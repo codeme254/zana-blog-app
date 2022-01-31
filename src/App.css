@@ -30,3 +30,48 @@ body{
   margin-right: 2rem!important;
   border-right: 1px solid #ccc;
 }
+
+/* home */
+.home{
+  height: clamp(90vh, 90vh, 90vh);
+  display: grid;
+  grid-template-columns: 60% 35%;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #111;
+  margin-bottom: 1rem;
+  /* grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr)); */
+}
+
+/* blogs */
+.blog__link--img{
+  --size: 15rem;
+  /* width: var(--size); */
+  width: 20rem;
+  min-width: 20rem;
+  max-width: 20rem;
+  height: var(--size);
+  margin-right: 2rem;
+}
+.blog__link--image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.home__background{
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.home__background--image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.home__title--placer{
+  grid-row: 3/4;
+  grid-column: 1/2;
+}

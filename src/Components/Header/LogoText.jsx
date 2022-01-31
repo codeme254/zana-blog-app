@@ -2,6 +2,6 @@ import React from "react";
 import { LogoStyled } from "../Styled/LogoText.styled";
 
 const LogoText = () => {
-  return <LogoStyled>zana</LogoStyled>;
+  return <LogoStyled>zanablog</LogoStyled>;
 };
 export default LogoText;

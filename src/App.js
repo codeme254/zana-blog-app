@@ -1,6 +1,7 @@
 import "./App.css";
 import { ThemeProvider } from "styled-components";
 import Header from "./Components/Header/Header";
+import Home from "./Components/Home/Home";
 
 const zanaTheme = {
   colors: {
@@ -18,6 +19,7 @@ function App() {
     <ThemeProvider theme={zanaTheme}>
       <div className="App">
         <Header />
+        <Home />
       </div>
     </ThemeProvider>
   );

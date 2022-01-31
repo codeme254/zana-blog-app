@@ -28,4 +28,8 @@ export const ButtonPrimary = styled.button`
  padding: 1rem 1.5rem;
  border-radius: 5px;
  color: ${({ theme }) => theme.colors.white};
+ transition: all .4s ease;
+ &:hover{
+    transform: translateY(-1px) scale(1.02);
+}
 `
