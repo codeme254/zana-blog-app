@@ -1,0 +1,32 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header__top, .header__bottom, .header__top--buttons{
+  display: flex;
+  align-items: center;
+}
+.header__top{
+  padding-top: 1rem;
+  border-bottom: 2px solid #eee;
+  padding: 1rem 1rem 1rem 0;
+}
+.header__bottom{
+  padding: 1rem 1rem 1rem 0;
+}
+.header__top--buttons>*:not(:last-child){
+  margin-right: 1rem;
+}
+.header__top--seperator{
+  margin-right: 2rem!important;
+  border-right: 1px solid #ccc;
+}
