@@ -6,6 +6,7 @@ import AllPreviews from "./Components/PreviewBlogs/AllPreviews";
 import BlogCategoryScience from "./Components/BlogCategory/BlogCategories/BlogCategoryScience";
 import BlogCategoryCommunity from "./Components/BlogCategory/BlogCategories/BlogCategoryCommunity";
 import VideoContainer from "./Components/Video/VideoContainer";
+import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
 
 const zanaTheme = {
@@ -29,6 +30,7 @@ function App() {
         <BlogCategoryScience />
         <BlogCategoryCommunity />
         <VideoContainer />
+        <Subscribe />
         <Footer />
       </div>
     </ThemeProvider>
