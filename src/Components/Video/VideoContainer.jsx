@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { StyledVideoContainer } from "../Styled/StyledVideoContainer.styled";
 import NextVideo from "./NextVideo";
 import Title from "../Typography/Title";
@@ -8,12 +8,42 @@ import code from "../../Assets/Images/code.png";
 import video from "../../Assets/Videos/vid1.mp4";
 
 const VideoContainer = () => {
+  const vidRef = useRef(null);
+  const btnRef = useRef(null);
+  const handleTogglePlay = () => {
+    if (vidRef.current.paused) {
+      vidRef.current.play();
+      btnRef.current.textContent = "pause video";
+    } else {
+      vidRef.current.pause();
+      btnRef.current.textContent = "play video";
+    }
+  };
+  const handleHover = () => {
+    btnRef.current.classList.add("come-to-top");
+  };
+  const handleHoverOut = () => {
+    btnRef.current.classList.remove("come-to-top");
+  };
   return (
     <section className="videos">
       <Title mainTitle="video gallery" subTitle="see all" />
       <StyledVideoContainer>
-        <div className="video__background">
-          <video src={video} autoPlay={true} loop={true} muted={true}></video>
+        <div className="video__background" onMouseEnter={handleHover} onMouseLeave={handleHoverOut}>
+          <video
+            ref={vidRef}
+            src={video}
+            autoPlay={false}
+            loop={true}
+            muted={true}
+          ></video>
+          <button
+            ref={btnRef}
+            className="video__play--button"
+            onClick={handleTogglePlay}
+          >
+            Play Video
+          </button>
         </div>
         <h1>
           The tech, health, business and education sectors will never die.

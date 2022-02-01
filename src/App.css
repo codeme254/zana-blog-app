@@ -182,6 +182,28 @@ body{
 .videos >*{
   color: #fff!important;
 }
+.video__background{
+  position: relative;
+}
+.video__play--button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: crimson;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: -3;
+}
+.come-to-top{
+  z-index: 10;
+}
 video{
   width: 100%;
   height: 100%;
