@@ -13,7 +13,7 @@ export const StyledTitle = styled.h2`
   a{
       &:link, &:visited{
         font-size: 2rem;
-        color: ${({theme}) => theme.colors.greyDark}
+        color: ${({theme}) => theme.colors.greyDark};
       }
   }
 `;
