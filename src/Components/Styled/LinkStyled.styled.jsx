@@ -14,4 +14,13 @@ export const LinkStyled = styled.a`
   &:first-of-type{
     padding-left: 0;
   }
+  @media screen  and (max-width: 50em){
+    &:link, &:visited{
+      color: #fff;
+      padding: 1rem 1.5rem;
+    }
+    &:not(:last-of-type){
+      margin-bottom: 2rem;
+    }
+  }
 `;
