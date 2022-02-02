@@ -10,4 +10,11 @@ export const StyledBlogLink = styled.a`
       height: 100%;
    }
  }
+ @media screen and (max-width: 17.5em) {
+   display: flex;
+   flex-direction: column;
+    &>*:not(:last-child){
+      margin-bottom: 1rem;
+    }
+ }
 `

@@ -53,4 +53,20 @@ export const StyledNextVideo = styled.a`
       font-weight: bolder;
     }
   }
+  @media screen and (max-width: 25em) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    &>*:not(:last-child){
+      margin-bottom: 1.5rem;
+    }
+    & div:first-of-type {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      height: 20rem;
+      min-height: 20rem;
+      max-height: 20rem;
+    }
+  }
 `;

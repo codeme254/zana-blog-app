@@ -10,6 +10,9 @@ export const StyledSubscribe = styled.form`
   & > *:not(:last-child) {
     margin-bottom: 3rem;
   }
+  @media screen and (max-width: 56.25em) {
+    width: 100%;
+  }
   h2 {
     font-size: 4rem;
     text-transform: capitalize;
@@ -27,12 +30,15 @@ export const StyledSubscribe = styled.form`
     color: ${({ theme }) => theme.colors.greyLight};
   }
   div {
-    //   border: 2px solid red;
     justify-self: stretch;
     align-self: stretch;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 23.5em) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   input {
     padding: 1rem;
@@ -45,6 +51,10 @@ export const StyledSubscribe = styled.form`
     border-bottom: 2px solid #111;
     &::-webkit-input-placeholder {
       text-transform: capitalize;
+    }
+    @media screen and (max-width: 23.5em) {
+      margin: auto;
+      margin-bottom: 3rem;
     }
   }
   button {

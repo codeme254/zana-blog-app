@@ -26,4 +26,12 @@ export const StyledVideoContainer = styled.section`
     font-family: serif;
     color: white;
   }
+
+  @media screen and (max-width: 56.25em) {
+    display: flex;
+    flex-direction: column;
+     &>*:not(:last-child){
+       margin-bottom: 2rem;
+     }
+  }
 `;
